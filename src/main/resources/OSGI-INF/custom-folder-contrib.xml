@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.sample.customfolderdoctype">
+
+    <require>org.nuxeo.ecm.directory.types</require>
+    <require>org.nuxeo.ecm.core.CoreExtensions</require>
+
+    <extension target="org.nuxeo.ecm.core.schema.TypeService" point="doctype">
+        <doctype name="CustomFolder" extends="Folder">
+            <subtypes>
+                <type>File</type>
+                <type>Picture</type>
+            </subtypes>
+        </doctype>
+    </extension>
+
+</component>
+
